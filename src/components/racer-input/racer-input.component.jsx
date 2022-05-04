@@ -1,7 +1,7 @@
 const RacerInput = () => {
     return (
-        <div>
-        </div>
+        <form className="input-container">
+        </form>
     )
 }
 
