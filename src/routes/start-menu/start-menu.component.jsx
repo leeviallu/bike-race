@@ -1,21 +1,15 @@
 import racersFile from '../../utils/racers.json'
-import RaceWatch from '../../components/race-watch/race-watch.component';
+import RacerContainer from '../../components/racer-container/racer-container.component';
+import RacerGrid from '../../components/racer-grid/racer-grid.component';
+
+import './start-menu.styles.scss';
 
 const StartMenu = () => {
     const { racers } = racersFile;
     return (
         <div className="start-menu-container">
-            <RaceWatch />
-            {
-                racers.map(racer => {
-                    const { firstName, lastName, racerNumber, id } = racer;
-                    return (
-                        <div className='racer-container' key={id}>
-                            <h2>{firstName} {lastName} {racerNumber}</h2>
-                        </div> 
-                    )
-                })
-            }
+            <RacerContainer racers={racers} />
+            <RacerGrid />
         </div>
     )
 }

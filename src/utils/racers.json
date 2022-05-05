@@ -1,28 +1,28 @@
 {
-    "racers": [
+"racers": [
         {
-            "firstName": "Leevi",
-            "lastName": "Leppänen",
-            "racerNumber": 22,
-            "id": 1
+            "firstName": "Kantti",
+            "lastName": "Pajula",
+            "racerNumber": 33,
+            "laps": 0
         },
         {
             "firstName": "Janne",
             "lastName": "Kohokas",
             "racerNumber": 34,
-            "id": 2
+            "laps": 0
         },
         {
             "firstName": "Jaska",
             "lastName": "Paneeri",
             "racerNumber": 66,
-            "id": 3
+            "laps": 0
         },
         {
             "firstName": "Kunto",
             "lastName": "Alanen",
             "racerNumber": 72,
-            "id": 4
+            "laps": 0
         }
     ]
 }
