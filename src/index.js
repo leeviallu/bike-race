@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+
 import App from './App';
+import { TimeProvider } from './contexts/time-context';
+import { RacerProvider } from './contexts/racer-context';
+
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter> 
+      <TimeProvider>
+        <RacerProvider>
+          <App />
+        </RacerProvider>
+      </TimeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
